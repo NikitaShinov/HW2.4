@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func loginButtonPressed() {
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
         if loginTextField.text == user.userName && passwordTextField.text == user.password {
             performSegue(withIdentifier: "logInSegue", sender: nil)
         } else {
@@ -66,7 +66,6 @@ extension ViewController: UITextFieldDelegate {
         if textField == loginTextField {
             passwordTextField.becomeFirstResponder()
         } else {
-            loginButtonPressed()
             performSegue(withIdentifier: "logInSegue", sender: nil)
         }
         return true

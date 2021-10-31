@@ -16,6 +16,7 @@
 		B673CABC272EC1FA00A269BC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CABB272EC1FA00A269BC /* Model.swift */; };
 		B673CABE272EC7EE00A269BC /* MainUITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CABD272EC7EE00A269BC /* MainUITabBar.swift */; };
 		B673CAC0272ECBE500A269BC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CABF272ECBE500A269BC /* WelcomeViewController.swift */; };
+		B673CAC2272F16E900A269BC /* StudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CAC1272F16E900A269BC /* StudiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B673CABB272EC1FA00A269BC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B673CABD272EC7EE00A269BC /* MainUITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITabBar.swift; sourceTree = "<group>"; };
 		B673CABF272ECBE500A269BC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B673CAC1272F16E900A269BC /* StudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				B673CAAB272EB8A100A269BC /* ViewController.swift */,
 				B673CABB272EC1FA00A269BC /* Model.swift */,
 				B673CAAD272EB8A100A269BC /* Main.storyboard */,
+				B673CAC1272F16E900A269BC /* StudiesViewController.swift */,
 				B673CABF272ECBE500A269BC /* WelcomeViewController.swift */,
 				B673CABD272EC7EE00A269BC /* MainUITabBar.swift */,
 				B673CAB0272EB8A500A269BC /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B673CAC2272F16E900A269BC /* StudiesViewController.swift in Sources */,
 				B673CABE272EC7EE00A269BC /* MainUITabBar.swift in Sources */,
 				B673CAAC272EB8A100A269BC /* ViewController.swift in Sources */,
 				B673CAA8272EB8A100A269BC /* AppDelegate.swift in Sources */,

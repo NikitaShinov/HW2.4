@@ -16,4 +16,5 @@ struct UserData {
 struct Biography {
     let name = "Nikita"
     let surname = "Shinov"
+    let studyLevel = "UIKit"
 }
