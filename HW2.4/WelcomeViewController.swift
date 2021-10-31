@@ -1,26 +1,26 @@
 //
-//  MainUITabBar.swift
+//  WelcomeViewController.swift
 //  HW2.4
 //
 //  Created by Никита Шинов on 31.10.2021.
 //
+
 import UIKit
 
-class MainUITabBar: UITabBarController {
+class WelcomeViewController: UIViewController {
     
-    var userName: String?
+    
+    var welcomeUserName: String?
+    let loggedInUser = Biography()
+
+    @IBOutlet var welcomeText: UILabel!
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//
-//        self.delegate = self
-//
-//        guard let viewControllers = viewControllers else { return }
-//
-//        for viewController in viewControllers {
-//            if let welcomeTab = viewController as? WelcomeViewController {
-//                welcomeTab.welcomeUserName =
-//            }
-//        }
+        
+        welcomeText.text = "Welcome, \(loggedInUser.name) \(loggedInUser.surname) 👋🏻"
         
     }
     

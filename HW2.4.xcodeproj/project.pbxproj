@@ -15,6 +15,7 @@
 		B673CAB4272EB8A500A269BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B673CAB2272EB8A500A269BC /* LaunchScreen.storyboard */; };
 		B673CABC272EC1FA00A269BC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CABB272EC1FA00A269BC /* Model.swift */; };
 		B673CABE272EC7EE00A269BC /* MainUITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CABD272EC7EE00A269BC /* MainUITabBar.swift */; };
+		B673CAC0272ECBE500A269BC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CABF272ECBE500A269BC /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B673CAB5272EB8A500A269BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B673CABB272EC1FA00A269BC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B673CABD272EC7EE00A269BC /* MainUITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITabBar.swift; sourceTree = "<group>"; };
+		B673CABF272ECBE500A269BC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				B673CAAB272EB8A100A269BC /* ViewController.swift */,
 				B673CABB272EC1FA00A269BC /* Model.swift */,
 				B673CAAD272EB8A100A269BC /* Main.storyboard */,
+				B673CABF272ECBE500A269BC /* WelcomeViewController.swift */,
 				B673CABD272EC7EE00A269BC /* MainUITabBar.swift */,
 				B673CAB0272EB8A500A269BC /* Assets.xcassets */,
 				B673CAB2272EB8A500A269BC /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				B673CABE272EC7EE00A269BC /* MainUITabBar.swift in Sources */,
 				B673CAAC272EB8A100A269BC /* ViewController.swift in Sources */,
 				B673CAA8272EB8A100A269BC /* AppDelegate.swift in Sources */,
+				B673CAC0272ECBE500A269BC /* WelcomeViewController.swift in Sources */,
 				B673CAAA272EB8A100A269BC /* SceneDelegate.swift in Sources */,
 				B673CABC272EC1FA00A269BC /* Model.swift in Sources */,
 			);

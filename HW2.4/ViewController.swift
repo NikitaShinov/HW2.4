@@ -31,6 +31,11 @@ class ViewController: UIViewController {
         }
         
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.welcomeUserName = loginTextField.text
+    }
     
     @IBAction func loginRemainder(_ sender: UIButton) {
     }

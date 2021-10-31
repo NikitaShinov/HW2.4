@@ -12,3 +12,8 @@ struct UserData {
     let userName = "Nikita"
     let password = "Swift"
 }
+
+struct Biography {
+    let name = "Nikita"
+    let surname = "Shinov"
+}
