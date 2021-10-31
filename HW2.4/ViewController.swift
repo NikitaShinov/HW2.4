@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func loginButtonPressed(_ sender: UIButton) {
+    @IBAction func loginButtonPressed() {
         if loginTextField.text == user.userName && passwordTextField.text == user.password {
             performSegue(withIdentifier: "logInSegue", sender: nil)
         } else {
@@ -38,10 +38,39 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginRemainder(_ sender: UIButton) {
+        let forgotLoginAlert = UIAlertController (title: "Forgot your login?", message: "It's \(user.userName)!", preferredStyle: .alert)
+                let okLoginAction = UIAlertAction (title: "Got it!", style: .default, handler: nil)
+        
+        forgotLoginAlert.addAction(okLoginAction)
+                present (forgotLoginAlert, animated: true, completion: nil)
     }
     
     @IBAction func passwordRemainder(_ sender: UIButton) {
+        let forgotPWAlert = UIAlertController (title: "Forgot your password?", message: "It's \(user.password)!", preferredStyle: .alert)
+                let okPWAction = UIAlertAction (title: "Got it!", style: .default, handler: nil)
+                
+                forgotPWAlert.addAction(okPWAction)
+                present (forgotPWAlert, animated: true, completion: nil)
     }
+    
     
 }
 
+extension ViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == loginTextField {
+            passwordTextField.becomeFirstResponder()
+        } else {
+            loginButtonPressed()
+            performSegue(withIdentifier: "logInSegue", sender: nil)
+        }
+        return true
+    }
+}
+
+    
