@@ -12,17 +12,24 @@ class ViewController: UIViewController {
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    private let user = UserData()
-    
+    var user: User?
+    var resume: Resume?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        user = User()
+        user?.setupUser()
+        resume = Resume()
+        
+        loginTextField.text = user?.login
+        passwordTextField.text = user?.password
     }
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        if loginTextField.text == user.userName && passwordTextField.text == user.password {
-            performSegue(withIdentifier: "logInSegue", sender: nil)
+        
+        if loginTextField.text == user?.login && passwordTextField.text == user?.password {
+            performSegue(withIdentifier: "logInSegue", sender: UIButton.self)
         } else {
             let warning = UIAlertController(title: "Authentification error", message: "Username or password is invalid", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Got it", style: .default, handler: nil)
@@ -33,12 +40,26 @@ class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.welcomeUserName = loginTextField.text
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        
+        guard let tabBarControllers = tabBarController.viewControllers else { return }
+        
+        for controller in tabBarControllers {
+            if let profileVC = controller as? ProfileViewController {
+                profileVC.user = user
+            } else if let bioVC = controller as? BioViewController {
+                bioVC.user = user
+            } else if let navigationControllerVC = controller as? UINavigationController {
+                let resumeVC = navigationControllerVC.topViewController as! ResumeViewController
+                resumeVC.resume = resume
+            }
+        }
     }
     
     @IBAction func loginRemainder(_ sender: UIButton) {
-        let forgotLoginAlert = UIAlertController (title: "Forgot your login?", message: "It's \(user.userName)!", preferredStyle: .alert)
+        
+        guard let userLogin = user?.login else { return }
+        let forgotLoginAlert = UIAlertController (title: "Forgot your login?", message: "It's \(userLogin)!", preferredStyle: .alert)
                 let okLoginAction = UIAlertAction (title: "Got it!", style: .default, handler: nil)
         
         forgotLoginAlert.addAction(okLoginAction)
@@ -46,7 +67,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func passwordRemainder(_ sender: UIButton) {
-        let forgotPWAlert = UIAlertController (title: "Forgot your password?", message: "It's \(user.password)!", preferredStyle: .alert)
+        guard let password = user?.password else { return }
+        let forgotPWAlert = UIAlertController (title: "Forgot your password?", message: "It's \(password)!", preferredStyle: .alert)
                 let okPWAction = UIAlertAction (title: "Got it!", style: .default, handler: nil)
                 
                 forgotPWAlert.addAction(okPWAction)

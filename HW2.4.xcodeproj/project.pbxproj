@@ -13,10 +13,12 @@
 		B673CAAF272EB8A100A269BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B673CAAD272EB8A100A269BC /* Main.storyboard */; };
 		B673CAB1272EB8A500A269BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B673CAB0272EB8A500A269BC /* Assets.xcassets */; };
 		B673CAB4272EB8A500A269BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B673CAB2272EB8A500A269BC /* LaunchScreen.storyboard */; };
-		B673CABC272EC1FA00A269BC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CABB272EC1FA00A269BC /* Model.swift */; };
-		B673CABE272EC7EE00A269BC /* MainUITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CABD272EC7EE00A269BC /* MainUITabBar.swift */; };
-		B673CAC0272ECBE500A269BC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CABF272ECBE500A269BC /* WelcomeViewController.swift */; };
-		B673CAC2272F16E900A269BC /* StudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CAC1272F16E900A269BC /* StudiesViewController.swift */; };
+		B673CABC272EC1FA00A269BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673CABB272EC1FA00A269BC /* User.swift */; };
+		B673DD68272F4C7400DDF64A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673DD67272F4C7400DDF64A /* ProfileViewController.swift */; };
+		B673DD6A272F4D2B00DDF64A /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673DD69272F4D2B00DDF64A /* BioViewController.swift */; };
+		B673DD6C272F58BA00DDF64A /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673DD6B272F58BA00DDF64A /* ResumeViewController.swift */; };
+		B673DD6E272F594D00DDF64A /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673DD6D272F594D00DDF64A /* Resume.swift */; };
+		B673DD70272F77F400DDF64A /* CheckResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673DD6F272F77F400DDF64A /* CheckResumeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +30,12 @@
 		B673CAB0272EB8A500A269BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B673CAB3272EB8A500A269BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B673CAB5272EB8A500A269BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B673CABB272EC1FA00A269BC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		B673CABD272EC7EE00A269BC /* MainUITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUITabBar.swift; sourceTree = "<group>"; };
-		B673CABF272ECBE500A269BC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		B673CAC1272F16E900A269BC /* StudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesViewController.swift; sourceTree = "<group>"; };
+		B673CABB272EC1FA00A269BC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B673DD67272F4C7400DDF64A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B673DD69272F4D2B00DDF64A /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		B673DD6B272F58BA00DDF64A /* ResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
+		B673DD6D272F594D00DDF64A /* Resume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resume.swift; sourceTree = "<group>"; };
+		B673DD6F272F77F400DDF64A /* CheckResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckResumeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +71,13 @@
 				B673CAA7272EB8A100A269BC /* AppDelegate.swift */,
 				B673CAA9272EB8A100A269BC /* SceneDelegate.swift */,
 				B673CAAB272EB8A100A269BC /* ViewController.swift */,
-				B673CABB272EC1FA00A269BC /* Model.swift */,
+				B673CABB272EC1FA00A269BC /* User.swift */,
+				B673DD6D272F594D00DDF64A /* Resume.swift */,
 				B673CAAD272EB8A100A269BC /* Main.storyboard */,
-				B673CAC1272F16E900A269BC /* StudiesViewController.swift */,
-				B673CABF272ECBE500A269BC /* WelcomeViewController.swift */,
-				B673CABD272EC7EE00A269BC /* MainUITabBar.swift */,
+				B673DD6F272F77F400DDF64A /* CheckResumeViewController.swift */,
+				B673DD6B272F58BA00DDF64A /* ResumeViewController.swift */,
+				B673DD69272F4D2B00DDF64A /* BioViewController.swift */,
+				B673DD67272F4C7400DDF64A /* ProfileViewController.swift */,
 				B673CAB0272EB8A500A269BC /* Assets.xcassets */,
 				B673CAB2272EB8A500A269BC /* LaunchScreen.storyboard */,
 				B673CAB5272EB8A500A269BC /* Info.plist */,
@@ -150,13 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B673CAC2272F16E900A269BC /* StudiesViewController.swift in Sources */,
-				B673CABE272EC7EE00A269BC /* MainUITabBar.swift in Sources */,
+				B673DD70272F77F400DDF64A /* CheckResumeViewController.swift in Sources */,
+				B673DD6E272F594D00DDF64A /* Resume.swift in Sources */,
 				B673CAAC272EB8A100A269BC /* ViewController.swift in Sources */,
+				B673DD6C272F58BA00DDF64A /* ResumeViewController.swift in Sources */,
 				B673CAA8272EB8A100A269BC /* AppDelegate.swift in Sources */,
-				B673CAC0272ECBE500A269BC /* WelcomeViewController.swift in Sources */,
+				B673DD68272F4C7400DDF64A /* ProfileViewController.swift in Sources */,
+				B673DD6A272F4D2B00DDF64A /* BioViewController.swift in Sources */,
 				B673CAAA272EB8A100A269BC /* SceneDelegate.swift in Sources */,
-				B673CABC272EC1FA00A269BC /* Model.swift in Sources */,
+				B673CABC272EC1FA00A269BC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
